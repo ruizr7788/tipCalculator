@@ -1,0 +1,110 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  background-color: rgba(79, 142, 201, 0.486);
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+}
+
+.tip_container {
+  background-color: #fff;
+  width: fit-content;
+  height: 40em;
+  width: 25em;
+  border-radius: 2em;
+  margin: auto;
+  box-shadow: 1px 1px 2px 3px rgba(90, 89, 89, 0.116);
+  margin-top: 15vh;
+  text-align: left;
+  position: relative;
+}
+.tip_name {
+  background-color: #333;
+  border-top-left-radius: 1em;
+  border-top-right-radius: 1em;
+  width: 100%;
+  color: #fff;
+  text-align: center;
+  font-size: 25px;
+  line-height: 40px;
+}
+
+.tip_form {
+  padding: 1em 2em;
+}
+
+.tip_label {
+  margin-top: 1.5em;
+}
+.form_input {
+  width: 10em;
+  padding: 1em 2em;
+  border-radius: 2em;
+  border: 1px solid rgb(207, 207, 229);
+  transition: all 0.3s;
+  margin-left: 5px;
+}
+.form_input:focus {
+  border: 1px solid rgb(118, 118, 129);
+  outline: none;
+  transition: all 0.3s;
+}
+
+#tip_service {
+  width: 15em;
+  padding: 1em 2em;
+  border-radius: 2em;
+  background-color: #fff;
+  border: 1px solid rgb(207, 207, 229);
+}
+#tip_service:focus {
+  outline: none;
+  border: 1px solid rgb(118, 118, 129);
+}
+.tip_button--calculate {
+  width: 15em;
+  display: block;
+  border-radius: 2em;
+  outline: none;
+  border: none;
+  background-image: linear-gradient(
+    to top left,
+    rgba(202, 95, 23, 0.596),
+    rgba(255, 0, 64, 0.466)
+  );
+  padding: 1em 2em;
+  text-align: center;
+  color: white;
+  position: absolute;
+  transform: translateX(8em);
+}
+.tip_button--calculate:hover {
+  background-image: linear-gradient(
+    to top left,
+    rgba(238, 124, 48, 0.658),
+    rgba(245, 37, 89, 0.507)
+  );
+}
+/* .tip_button--calculate:focus {
+  transform: translateY(2px);
+} */
+
+.tip_display {
+  margin-top: 2em;
+  color: rgb(61, 58, 58);
+  font-size: 0.5em;
+  margin-bottom: 12em;
+}
+
+.hidden {
+  opacity: 0;
+  display: none;
+}
+
+.error_message {
+  color: red;
+  font-size: 10px;
+  margin: 10px 0 0 2em;
+}

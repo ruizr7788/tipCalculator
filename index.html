@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="UTF-8" />
+    <title>Tip Calculator</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="tip.css" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+  </head>
+  <body>
+    <main class="tip_container">
+      <h1 class="tip_name">Tip Calculator</h1>
+      <div class="tip_form">
+        <p class="tip_label">How much was your bill?</p>
+        <br />
+        $<input
+          class="form_input"
+          id="form_input--bill-amount"
+          type="number"
+          placeholder="Bill Amount"
+        /><br />
+        <p class="error_message error_message--bill hidden">
+          Please insert a valid number
+        </p>
+        <br />
+        <p class="tip_label">How was your service?</p>
+        <br />
+        <select style="-webkit-appearance: none" id="tip_service">
+          <option class="select_option select_option--none">
+            --Choose an Option--
+          </option>
+          <option class="select_option select_option--great">Great</option>
+          <option class="select_option select_option--average">Average</option>
+          <option class="select_option select_option--bad">Bad</option></select
+        ><br />
+        <p class="tip_label">How many people are sharing the biill?</p>
+        <br />
+        <input
+          class="form_input form_input--people"
+          type="number"
+          placeholder="Number of People"
+        /><br />
+        <p class="error_message error_message--people hidden">
+          Please insert a valid number
+        </p>
+        <br />
+        <div class="tip_display hidden">
+          <h2 class="tip_message">
+            Total tip amount (per person if more than one):
+            <span class="tip_amount">$&nbsp;0.00</span>
+          </h2>
+        </div>
+      </div>
+      <button class="tip_button tip_button--calculate">Calculate</button>
+    </main>
+    <script src="tip.js"></script>
+  </body>
+</html>
